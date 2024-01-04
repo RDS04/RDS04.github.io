@@ -3,11 +3,12 @@
     margin: 0;
     font-family: sans-serif;
     box-sizing: border-box;
+    text-decoration: none;
 }
 .awalan {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(48, 47, 47, 0.603), rgba(255, 255, 255, 0)), url(foto.jpg);
+    background: linear-gradient(rgba(48, 47, 47, 0.603), rgba(255, 255, 255, 0)), url(han.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -58,12 +59,9 @@ nav ul li a:hover {
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
-    padding: 2px 10px;
+    padding: 1px 10px;
     border-radius: 30px;
     transition: transform .4s;
-}
-.btn:hover {
-    transform: scale(1.2);
 }
 .content {
     position: absolute;
@@ -93,7 +91,7 @@ h3 {
     display: inline-block;
     width: 100%;
     padding: 14px 130px 14px 15px;
-    border: 2px solid #021e53;
+    border: 2px solid #99a8c3;
     outline: none;
     border-radius: 30px;
 }
@@ -108,4 +106,105 @@ h3 {
     box-shadow: 0px 0px rgb(241, 238, 238), 0px 0px 15px rgb(128, 117, 172);
     top: 6px;
     right: 6px;
+}
+
+/* Index end */
+.backgraund{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(48, 47, 47, 0.603), rgba(255, 255, 255, 0)), url(han.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 50px
+}
+.backgraund h3{
+    text-align: center;
+    padding-bottom: 120px;
+}
+.foto{
+    display: flex;
+}
+.isidesc{
+    background: transparent;
+    backdrop-filter: blur(1.2px);
+}
+.isidesc .foto {
+    display: flex;
+    margin-left: 100px;
+    align-items: flex-start;
+}
+
+.isidesc img {
+    width: 50px;
+    height: 300px;
+    border-radius: 20px;
+    margin-right: -30px; /* Adjust the margin as needed */
+    cursor: pointer;
+    filter: blur(0);
+    /* transition: width 1,5s ease-in-out, filter 1,5s ease-in-out;  */
+    transition: opacity 10s ease-in-out;
+}
+
+
+.isidesc img:last-child {
+    margin-right: 0; /* Remove right margin for the last image */
+}
+
+.isidesc img:hover {
+    transition: width 10s ease-in-out, filter 10s ease-in-out; 
+    width: auto;
+    margin-top: -20px;
+}
+
+.isidesc p {
+    padding-top: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 20px;
+    margin-left: 80px; /* Adjust the margin as needed */
+}
+
+.sosial{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(48, 47, 47, 0.603), rgba(255, 255, 255, 0)), url(han.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 50px
+}
+.title{
+   text-align: center;
+}
+.sosmed{
+    display: flex;
+    justify-content: space-around;
+}
+.sosmed img {
+    width: auto;
+    height: 50px;
+    
+}
+.sosmed .fb{
+    background-color: grey;
+    border-radius: 40px;
+    justify-content: center;
+    text-align: center;
+}
+.sosmed .fb a{
+    display: block;
+    color: white;
+    justify-content: center;
+}
+.sosmed .fb img:hover{
+    display: ;
+    width: 150px;
+    rotate: 30px;
+}
+.sosmed .twit{
+    background-color: black;
+}
+.sosmed .ig{
+    background-color: black;
 }
